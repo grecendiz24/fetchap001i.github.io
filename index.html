@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Datatables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="estilos/style.css"> 
+    <title>Tabla!</title>
+</head>
+
+<body>
+
+     <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="https://i.ya-webdesign.com/images/vector-javascript-14.png" width="30" height="30"
+                class="d-inline-block align-top" alt="" loading="lazy">
+            Api de tabla
+        </a>
+    </nav>
+
+    <div class="mx-auto mt-1" style="width: 300px;">
+        <p> Api de consulta : https://restcountries.eu/rest/v2/all</p>
+    </div>
+<hr>
+    <div style="display: block;" id="load">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+    </div>
+
+    <div class="row mt-3" style="display: none;" id="loadTerminado"> 
+        <div class="col-md-12">
+            <div class="table-responsive" id="mydatatable-container">
+                <table id="table_id" class="display">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Region</th>
+                            <th>Poblacion</th>
+                            <th>Bandera</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contenido">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <script src="script/app.js"></script>
+    
+
+</html>
